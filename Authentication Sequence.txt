@@ -1,0 +1,14 @@
+title Authentication Sequence
+
+A->*B: create page by POST method
+B-->A: response 302
+
+A->+B: get js button listener
+B-->-A: returning html/javascript (code 304)
+
+
+A->+B: get css main code
+B-->-A: returning css main code (code 304)
+
+A->+B: get dat json
+B-->-A: return list of pages (code 200)
